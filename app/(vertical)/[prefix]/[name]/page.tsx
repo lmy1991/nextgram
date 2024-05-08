@@ -1,5 +1,3 @@
-import Modal from './_m/Modal';
-
 export default function Page({ params }: { params: { name: string } }) {
-  return <Modal>{params.name}</Modal>
+  return <div className="card">{params.name}</div>
 }
