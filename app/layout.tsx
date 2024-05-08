@@ -7,16 +7,12 @@ export const metadata = {
   metadataBase: new URL('https://nextgram.vercel.app'),
 };
 
-export default function RootLayout(props: {
-  children: React.ReactNode;
-  modal: React.ReactNode;
-}) {
+export default function RootLayout(properties: { children: React.ReactNode; modal: React.ReactNode }) {
   return (
     <html>
       <body>
-        {props.children}
-        {props.modal}
-        <div id="modal-root" />
+        {properties.children}
+        {properties.modal}
       </body>
     </html>
   );
